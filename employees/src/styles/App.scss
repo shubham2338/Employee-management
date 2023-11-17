@@ -1,0 +1,96 @@
+//main page
+*{
+    background-blend-mode: lighten;
+}
+
+
+//Navbox
+
+.divnav{
+    width: 99vw;
+    height: 10vh;
+    background-color: rgb(153, 184, 184);
+    border: 2px solid black;
+}
+
+.divnav p{
+    padding-top: 1.5%;
+    margin-left:41% ;
+    margin-right: 40%;
+    font-weight: 600;
+}
+
+.divbox{
+    width: 99vw;
+    margin-top:-2%;
+}
+
+.navbox{
+    margin-right: 60%;
+    width: 17vw;
+    background-color: rgb(170, 170, 170);
+    padding-left: 1%;   
+    padding-right:1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: border-box;
+    border: 2px solid black;
+    border-left-color: white;
+    border-top-color: white;
+}
+
+.navbox .p{
+    color: black;
+    font-weight: 600;
+    padding: 5%;
+    text-decoration: none;
+    display: block;
+}
+
+//Add employee
+.addemp form button{
+    width: 40%;
+    margin-left: 28%;
+    background-color: rgb(154, 136, 136);
+    padding: 2%;
+}
+
+.addemp h3{
+    padding: 2%;
+    margin-bottom: 20%;
+    margin-left: 18%;
+}
+.addemp{
+    margin-top: -12%;
+    margin-right: 30%;
+    width: 24vw;
+    height: 60vh;
+    float: right;
+    border: 2% solid black;
+}
+.addemp form{
+    margin-top: -10%;
+}
+.addemp form input{
+    width: 20vw;
+    padding: 2.5%;
+    display: block;
+    margin: 4%;
+}
+
+
+// All employee 
+
+ .tablebox table{
+    padding-right:3%;
+    padding-left: 1%;
+    background-color: aliceblue;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: -15%;
+ }
+ 
+.tablebox table thead tr th{
+    padding: 5%;
+}
+//media query
