@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require("validator");
-
+const moment = require("moment");
 
 //schema
 
@@ -25,7 +25,7 @@ const empSchema = new mongoose.Schema({
     },
 
     date_of_joining:{
-            type: Date,
+            type: String,
             required: true
     },
 
@@ -36,6 +36,7 @@ const empSchema = new mongoose.Schema({
             required: true
         }
     }
+    
 
 );
 

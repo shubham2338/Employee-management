@@ -10,9 +10,7 @@ function AddEmp() {
     
     setUsers({...users , [e.target.name] : e.target.value});
     console.log(users);
-
   }
-
 
   return (
     <>
@@ -26,7 +24,12 @@ function AddEmp() {
         <input type="email" name="email" id="empemail" placeholder='Enter email' onChange={()=> onValueChange}/>
 
         <label>Department</label>
-        <input type="text" name="department" id="empdepartment" placeholder='Enter department' onChange={()=> onValueChange}/>
+        <select className="emp_dropdown_dept">
+          <option value="software engineer">software engineer</option>
+          <option value="Network Engineer">Network engineer</option>
+          <option value="software tester">software Tester</option>
+          <option value="fllstack developer">fullstack developer</option>
+        </select>
 
         <label>Date Of Joining</label>
         <input type="date" name="doj" id="empdoj" placeholder='Enter date' onChange={()=> onValueChange}/>

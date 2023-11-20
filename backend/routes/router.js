@@ -9,5 +9,6 @@ router.post("/addemp", controllers.emppost);
 router.get("/allemp", controllers.allempget);
 router.get("/active",controllers.activeget);
 router.delete("/deleteuser/:id", controllers.deleteEmp);
+router.put("/edit/:id",controllers.editEmp);
 
 module.exports = router;

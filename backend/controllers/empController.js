@@ -27,7 +27,6 @@ exports.emppost = async(req,resp)=>{
 exports.allempget = async(req,resp)=>{
     try {
         const empData= await employees.find();
-        console.log(empData);
         resp.status(200).json(empData);
         
     }
@@ -61,4 +60,29 @@ exports.deleteEmp = async(req,resp)=>{
         resp.status(400).json(error);
     }   
     
+}
+
+// edit emp
+
+exports.editEmp = async(req,resp)=>{
+    const {id} = req.params;
+    const filter = {_id: id };
+    const update = {
+    $set: {
+        name: req.body.name,
+        email: req.body.name,
+        department: req.body.department,
+        date_of_joining: req.body.date_of_joining,
+        status: req.body.status
+        },
+    };
+
+  try {
+    const result = await employees.updateOne(filter, update);
+    resp.status(200).json(result)
+    }
+    catch(error)
+    {
+        resp.status(400).json(error);
+    }   
 }

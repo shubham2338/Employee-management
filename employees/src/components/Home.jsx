@@ -5,8 +5,8 @@ import '../styles/App.css'
 const Home = () => {
   return (
     <>
-    <div class="home-container">
-      <div class="home">
+    <div className="home-container">
+      <div className="home">
       </div>  
   </div>
     </>

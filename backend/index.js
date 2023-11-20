@@ -10,7 +10,7 @@ const cors = require('cors');
 
 const router = require('./routes/router');
 
-const PORT= 3000;
+const PORT= 8000;
 
 
 
